@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Cin Ruiz",
+    "gender": "f",
+    "generation": 21
+  },
+  {
+    "id": 2,
+    "name": "Jonatan Arevalo",
+    "gender": "m",
+    "generation": 21
+  },
+  {
+    "id": 3,
+    "name": "Annie León",
+    "gender": "f",
+    "generation": 21
+  }
+]
