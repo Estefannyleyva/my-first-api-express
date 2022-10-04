@@ -1,20 +1,46 @@
-[
-  {
-    "id": 1,
-    "name": "Cin Ruiz",
-    "gender": "f",
-    "generation": 21
-  },
-  {
-    "id": 2,
-    "name": "Jonatan Arevalo",
-    "gender": "m",
-    "generation": 21
-  },
-  {
-    "id": 3,
-    "name": "Annie León",
-    "gender": "f",
-    "generation": 21
-  }
-]
+{
+  "koders": [
+    {
+      "id": 1,
+      "name": "Cin Ruiz",
+      "gender": "f",
+      "generation": 21
+    },
+    {
+      "id": 2,
+      "name": "Jonatan Arevalo",
+      "gender": "m",
+      "generation": 21
+    },
+    {
+      "id": 3,
+      "name": "Annie León",
+      "gender": "f",
+      "generation": 21
+    },
+    {
+      "id": 4,
+      "name": "Haro",
+      "gender": "h",
+      "generation": 9
+    },
+    {
+      "id": 5,
+      "name": "Fers",
+      "gender": "f",
+      "generation": 7
+    },
+    {
+      "id": 6,
+      "name": "Mauro",
+      "gender": "h",
+      "generation": 9
+    },
+    {
+      "id": 7,
+      "name": "Fanny Leyva",
+      "gender": "f",
+      "generation": 21
+    }
+  ]
+}

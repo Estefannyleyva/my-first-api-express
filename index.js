@@ -74,11 +74,26 @@ Ejercicio:
 server.get('/koders', async (request, response)=>{
     const dataFile = await fs.promises.readFile('./kodemia.json', 'utf8')
     const json = JSON.parse(dataFile)
-    const koders = json.koders
+    // const koders = json.koders
+
+    // accedo a los query params directamente en el request
+    const queries = request.query;
+    console.log('queries: ', queries);
+    const {generation, gender} = request.query;
+    console.log('generation: ', generation);
+    let kodersFiltered = json.koders;
+
+    if(generation){
+        kodersFiltered = kodersFiltered.filter(koder => koder.generation === parseInt(generation))
+    }
+    if(gender){
+        kodersFiltered = kodersFiltered.filter(koder => koder.gender === gender)
+    }
+
     response.json({
         success: true,
         data: {
-            koders
+            koders: kodersFiltered || json.koders
         }
     })
 })
@@ -104,7 +119,7 @@ server.get('/koders/:idKoder', async (request, response)=>{
     const id = parseInt(request.params.idKoder);
     const dataFile = await fs.promises.readFile('./kodemia.json', 'utf8')
     const json = JSON.parse(dataFile)
-
+    
     const koderFound = json.koders.find(koder => koder.id === id)
 
     if(!koderFound){
@@ -144,9 +159,10 @@ server.patch('/koders/:idKoder', async (request, response)=>{
 server.delete('/koders/:idKoder', async (request, response)=>{
     const id = parseInt(request.params.idKoder);
     const dataFile = await fs.promises.readFile('./kodemia.json', 'utf8');
-    const json = JSON.parse(dataFile);
+    let json = JSON.parse(dataFile);
     const koderDelete = json.koders.filter(koder => koder.id != id);
-    await fs.promises.writeFile('./kodemia.json', JSON.stringify(koderDelete,null,2),'utf8');
+    json.koders = koderDelete
+    await fs.promises.writeFile('./kodemia.json', JSON.stringify(json,null,2),'utf8');
     
     response.json({
         message: 'koder Eliminado'
