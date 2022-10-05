@@ -21,7 +21,7 @@
     {
       "id": 4,
       "name": "Haro",
-      "gender": "h",
+      "gender": "m",
       "generation": 9
     },
     {
@@ -33,7 +33,7 @@
     {
       "id": 6,
       "name": "Mauro",
-      "gender": "h",
+      "gender": "m",
       "generation": 9
     },
     {
@@ -41,6 +41,99 @@
       "name": "Fanny Leyva",
       "gender": "f",
       "generation": 21
+    }
+  ],
+  "mentors": [
+    {
+      "id": 1,
+      "name": "Fernanda Palacios",
+      "gender": "f",
+      "module": [
+        "Back-end",
+        "Maquetado",
+        "Python"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Victor Torres",
+      "gender": "m",
+      "module": [
+        "Maquetado",
+        "Ux/Ui"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Aldo Aldaco",
+      "gender": "m",
+      "module": [
+        "JavaScript",
+        "Maquetado"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Odon Lozada",
+      "gender": "m",
+      "module": [
+        "Introduccion",
+        "Algoritmos"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Aurora Escalera",
+      "gender": "f",
+      "module": [
+        "Introduccion",
+        "Algoritmos"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Daniel Cruz",
+      "gender": "m",
+      "module": [
+        "React"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Charles Silva",
+      "gender": "m",
+      "module": [
+        "Back-end",
+        "Git & GitHub",
+        "AWS"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Israel salinas",
+      "gender": "m",
+      "module": [
+        "Maquetado",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Veronica Nemecio",
+      "gender": "f",
+      "module": [
+        "Scrum"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Alfredo",
+      "gender": "m",
+      "module": [
+        "Maquetado",
+        "JavaScript",
+        "Linux"
+      ]
     }
   ]
 }
